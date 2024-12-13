@@ -1,0 +1,100 @@
+React Class
+
+- Basic to Advanced
+- 2 Projects
+- MERN stack
+
+M -> MongoDB 
+E -> Express JS 
+R -> React JS
+N -> Node Js
+
+- Buliding, Testing, Deploying
+
+Bulinding -> Webpack, Parcel, Vite
+Testing -> JEST Framework
+Deploying -> GIT, Firebase, AWS, Azure
+
+
+1. What is React?
+    React is a Javascript library used to bulid Web and Native UI.
+
+2. What is Difference Between React and Angular?
+    React is library.
+    Angular is a Framework.
+
+    React Js:
+        70% BackEnd Server Side [ Frameworks ],
+        30% FrontEnd.
+
+    Angular:
+        40% to 50% BackEnd,
+        50% to 60% FrontEnd.
+
+3. Is there differenc between React & React JS?
+    No. 
+
+4. What is React Native?
+    Mobile Framework for React, You can also use "ionic, native script etc."
+
+5. Which React version?
+    React up to 17x is Legacy.             React upto 17x - Classes       https://legacy.reactjs.org/
+    React 18x is Latest.                   React 18x - Functions          https://react.dev/
+    React 19x is in the Timeline. 
+
+6. Why we need React or Angular like libraries & frameworks?
+    To address the challenges in modern web development.
+
+7. What are the challenges in modern web development?
+    1. Unified UX
+        eg. Youtube before PC/Laptop and Now we use 80% users in mobile
+        Earliary, They optmizing the youtube webpage the compress the file to fit in mobile.
+        All web page or app should work similar in the pc/laptop or mobile.
+    
+    2. Fluid UX
+        one page scroll
+
+    3. Loosely Coupled & Extensible
+        App have Feactures like f1 , f2 and you make new f3 feacture. you have to go to the app upload it we though changing any thing in app.
+
+8. What is the solution?
+    By building SPA [Single Page Application] & PWA [Progressive Web Application].
+
+9. How to bulid SPA & PWA?
+    You can build using Javascript, JQuery, React, Angular, Vue, Knockout JS, BackBone, Ember JS.
+
+10. What are issues in buliding A SPA with JS & jQuery?
+    - Lot of DOM Manipulations
+    - Lot of Dom Interactions
+    - Lot of explicit Ajax
+    - Heavy
+    - Slow
+    - Legacy
+
+11. What are the Feactures of React?
+    1. It is Component Based.
+    2. It is Easy to reuse, extend and test.
+    3. Good reusability, Extensibility, testability and maintainability
+    4. It is Modular.
+    5. It uses less memory.
+    6. It loads application specific framework.
+    7. It makes application light weight.
+    8. It renders faster.
+    9. It is loosely coupled and extensible.
+    10. It uses "Virtual DOM".
+    11. It uses one way binding.
+
+12. What is DOM?
+    hierarchy of elements in page.
+
+13. what is Shadow DOM?
+    hierarchy of elements in a Component. eg. input type date, button, etc.
+
+14. What is Virtual DOM?
+    It is a copy of actual DOM is memory, Rract uses virtual Dom to update the UI.
+    It makes the rendering and presentation look faster than normal.
+
+15. Issues with React?
+    - It is not designed for what you are using.
+    - Hence lot of GAP's.
+    - lot of 3rd party implementations are required

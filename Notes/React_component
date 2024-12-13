@@ -1,0 +1,95 @@
+- React is Component based
+- Components are considered as buliding block for SPA [Single Page Application].
+- Component is like a template with 3 basic elements
+    a. Design
+    b. Styles
+    c. Logic [Functionality]
+- Design is created using HTML.
+- Styles are defined with CSS.
+- Logic is configure with JavaScript or TypeScript [JSX, TSX].
+- Component in React are created by using
+    a. JavaScript Functions
+    b. JavaScript Classes
+
+Notes: Classes are still supported in React, But not recommended for new Code.
+
+JavaScript Funcctions:
+- Function Declaration 
+- Function Expresion 
+- Functiion Signature
+- Function Parameters
+- Rest Parameters
+- Spread Operator in Functions
+- Formal Parameters
+- Actual Parameters
+- Function Closure
+- Anonymous Function
+- Function Generator 
+- Function Call Back
+- Function Promises
+- Async Functions 
+- Arrow Fuctions
+- Function Recursion
+
+Rules for Creating a component with JS function:
+- Component function name must start with upper case letter.
+    function Login(){
+
+    }
+
+    function login(){}  => Invaild
+
+- Component function must return JSX element.
+- It can't be void type.
+- JSX is returened by using anonymous funtion.
+    function Login(){
+        return (
+            <markup></markup> // JSX
+        )
+    }
+
+JSX Rules:
+- JSX can't render multiple containers
+- Make sure that JSX is rendering only one container into Virtual DOM.
+
+    (
+            <h2>User Login</h2>
+            <dl>
+                <dt>User Name</dt>                     => Invaild
+                <dd>Asmit Patil</dd>
+            </dl>
+    )
+
+    (
+        <div>
+            <h2>User Login</h2>
+            <dl>
+                <dt>User Name</dt>                    => Vaild
+                <dd>Asmit Patil</dd>
+            </dl>
+        </div>
+    )
+
+- JSX can't have void element syntax.
+- In JSX every elment must have end token.
+    <input type="text"></input>
+    <input type="text"/>
+
+    <img></img>
+    <img/>
+
+    <br></br>
+    <br>
+- JSX element can't use attributes, it require only properties.
+    <div class="container"></div>   //Invaild
+    <div className="container"></div>   //vaild
+
+Note: You can define a JSX fragment using various techniques.
+    a. You can use HTML containers
+        <div> <header> <section> <main> <nav> etc.
+
+    b. You can use Empty fragment
+        <></>
+
+    c. You can also use React Fragment
+        <React Fragment></React Fragment> 

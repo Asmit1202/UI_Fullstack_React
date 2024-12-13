@@ -1,0 +1,30 @@
+Creating React 18x Applicattion
+- React application can be built by using various bundling tools.
+    a. Webpack
+    b. Parcel
+    c. Vite
+
+- Bundling tools allow to configure a complete web application for enviroments like 
+    a. Development
+    b. Quality [Testing]
+    c. Production
+
+- Node JS provides support for Webpack bundler, hene you can create a react application by using Webpack bundler if Node JS installed on your PC.
+
+- Create project by using the following command
+    > npx create-react-app app-name
+
+- Open Project folder in VS Code
+
+- React Application File system comprises of the following
+
+    File / Folder                    Description
+    -----------------------------------------------------------------------------------------------------
+    public                           contians static resources like html, images, docs, etc.
+    src                              contains dynamic resources like scss, css, js, jsx, ts, tsx, etc.
+    node_modules                     contains all library file installed using NPM package manager.
+    package.json                     contains project meta data.
+    package.lock.json                contains complete dependencies list are used for project.
+    .gitignore                       cofigures the resources to ignore while publishing on to GIT.
+    README.md                        conatains help documentation.
+

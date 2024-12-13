@@ -1,0 +1,146 @@
+Setup Environment for React
+
+1. Download and Install Node JS on your PC
+    - Node JS is used to create web apps, servers, scripting tools etc.
+    - https://nodejs.org/en
+    - Node JS provides a package manager called NPM [Node Package Manager].
+    - Package Manager is tool used by developer to install, upgrade and uninstall any library required for project.
+    - Other Package Manager : Yarn
+                              Bower
+                              Nuget
+                              Ruby GEMS 
+                              Composer
+    - Open command prompt on your PC and test
+        c:\> node -v
+        c:\> npm -v
+    Note: Make sure that you have the latest version of Node 20X &  NPM 10X.
+
+2. Download Visual Studio Code Editor
+    https://code.visualstudio.com/
+    
+3. Download extensions of VS Code
+    - Live Server
+    - vscode-icons
+    - IntelliSense for CSS class names in HTML.
+    - ESLint
+
+4. React in existing web application
+    1. Create a new folder for web application.
+        C:\Asmit\React\Web-App
+
+    2. Open folder in VS Code and Setup environment for Web Application.
+
+    3. Open Terminal and run the command 
+        > npm init -y
+
+    4. Add a new file into project by name
+        "README.md"
+    
+    5. Add Folders 
+        a. public
+        b. src
+    
+    6. Add "index.html" in public folder
+
+    7. Add "home.html" in public folder
+
+    8. Setup React library for "home.html".
+        - In order to use React in any page you need 3 libraries
+            a. react.js             : core library for react
+            b. react-dom.js         : library for virtual Dom
+            c. babel.js             : compiler for react
+
+        - You need all these libraries and approach for react up to version "17x".
+
+        - You can get the libraries from CDN or download using package manager.
+
+        - CDN is available for React from legacy repository.
+            https://legacy.reactjs.org/docs/cdn-links.html 
+        
+        - Babel CDN links: copy babel standalone library
+            https://babeljs.io/docs/babel-standalone
+        
+        - Create an element for actual DOM
+            <div id="root"></div>
+
+        - Create virtual DOM and render into actual by using the method 
+            ReactDOM.render("component", target_aon_actual_DOM)
+        
+        - React uses JSX [Javascript Extension] as language. hence the type of script must be "Jsx or Babel".
+            <script type="text/babel"></script>
+            <script type="text/jsx"></script>
+
+    index.html:
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+    </head>
+    <body>
+        <h2>Index</h2>
+        <p>React is in <a href="home.html">Home</a> page</p>
+    </body>
+    </html>
+
+    home.html:
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            ReactDOM.render("Welcome to React", document.getElementById("root"));
+        </script>
+    </head>
+    <body>
+        <noscript>Please enable Javascript on your browser!</noscript>
+        <h2>Home</h2>
+        <div id="root"></div>
+    </body>
+    </html>
+
+    9. Install React and Babel library for Project
+        1. Open Terminal in your Project.
+
+        2. Install libraries by using following commands
+            > npm install --save-exact react@^18.0.0 
+            > npm install --save-exact react-dom@^18.0.0
+            > npm install @babel/standalone --save
+        
+        3. All library files are copied into "node_modules" folder and project is using a module system called "UMD" [Universal Module Distribution]. There are various other module systems like:
+            a. common JS
+            b. rquire JS
+            c. AMD
+            d. ESModule
+
+        4. Link the following file to your HTML page [home.html]
+            <script src="../node_modules/react/umd/react.development.js"></script>
+            <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+            <script src="../node_modules/@babel/standalone/babel.js"></script>
+        
+        home.html:
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Home</title>
+            <script src="../node_modules/react/umd/react.development.js"></script>
+            <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+            <script src="../node_modules/@babel/standalone/babel.js"></script>
+            <script type="text/babel">
+                ReactDOM.render("Welcome to React", document.getElementById("root"));
+            </script>
+        </head>
+        <body>
+            <noscript>Please enable Javascript on your browser!</noscript>
+            <h2>Home</h2>
+            <div id="root"></div>
+        </body> 
+        </html>
